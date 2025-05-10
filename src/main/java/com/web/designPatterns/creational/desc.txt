@@ -1,0 +1,24 @@
+Creational Design Pattern - deal with object creation mechanisms
+    focuses on best way to create objects, abstracting the initiation process of objects,
+    helping to make a system independent of how its objects are created, composed, and represented
+
+Types
+1. Singleton
+2. Factory
+3. Abstract Factory
+4. Builder
+5. Prototype
+
+1. Singleton: ensures only one instance of the class exists through out the application.
+                Provides a global access to application.
+    Why use singleton: to manage shared resources - Configuration, logging, caching, threadpools
+                        ensures one object controls everything
+    how to make a class to singleton:
+        Private constructor
+        private static instance variable
+        public static method to get instance variable
+
+    Lazy initialization is not threadsafe -  if multiple threads access the singleton at the same time
+                                             — especially when the instance hasn't been created yet
+                                             — they can end up creating multiple instances, violating the Singleton pattern.
+
