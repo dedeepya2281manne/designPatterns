@@ -22,3 +22,6 @@ Types
                                              — especially when the instance hasn't been created yet
                                              — they can end up creating multiple instances, violating the Singleton pattern.
 
+2. Factory: provides an interface for creating objects in a superclass
+    Why use factory: encapsulate object creation logic, avoid tight coupling between classes, to follow open/close principle.
+                     When you have many subclasses of a type and you want to decide which one to instantiate at runtime
