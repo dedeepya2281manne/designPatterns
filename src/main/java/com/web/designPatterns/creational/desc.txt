@@ -25,3 +25,7 @@ Types
 2. Factory: provides an interface for creating objects in a superclass
     Why use factory: encapsulate object creation logic, avoid tight coupling between classes, to follow open/close principle.
                      When you have many subclasses of a type and you want to decide which one to instantiate at runtime
+
+3. Builder: Construct a complex object step by step. When an object has too many constructor parameters or optional values
+       It lets you create diff representations of an object using the same construction process.
+       Makes object creation code readable and maintainable.
