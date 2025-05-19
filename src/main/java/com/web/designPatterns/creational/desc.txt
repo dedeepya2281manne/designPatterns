@@ -29,3 +29,7 @@ Types
 3. Builder: Construct a complex object step by step. When an object has too many constructor parameters or optional values
        It lets you create diff representations of an object using the same construction process.
        Makes object creation code readable and maintainable.
+4. Prototype: Used to create clones of existing objects
+              Instead of creating the objects with new keyword, clone the object from existing object using clone().
+        When to Use: when object creation is costlier or complex.
+                     avoid reinitializing of object with default values
